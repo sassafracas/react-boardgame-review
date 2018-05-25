@@ -38,7 +38,6 @@ export default class BoardGameContainer extends Component {
           genres={this.state.genres}
           currentGenre={this.state.currentGenre}
           handleGenreFilter={this.genreFilter}
-          handleNameFilter={() => {}}
         />
         <GameForm
           genres={this.state.genres}

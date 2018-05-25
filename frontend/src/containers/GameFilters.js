@@ -10,9 +10,7 @@ const GameFilters = (props) => {
         currentGenre={props.currentGenre}
         handleDropdown={props.handleGenreFilter}
       />
-      <NameFilter
-        handleNameFilter={this.handleNameFilter}
-      />
+      <NameFilter />
     </div>
   )
 }

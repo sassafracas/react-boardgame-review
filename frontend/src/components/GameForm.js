@@ -17,7 +17,7 @@ export default class GameForm extends Component {
 
   render() {
     return (
-      <div className="filter">
+      <div className="gameform">
         <form className="create">
           <label>
             Name:
