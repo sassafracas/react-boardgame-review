@@ -1,6 +1,7 @@
 import React from 'react';
+import Game from './Game';
 
-const GamesTable = (props) => {
+const GamesTable = ({ games }) => {
   return (
     <table className="games">
       <tbody>
@@ -13,6 +14,12 @@ const GamesTable = (props) => {
           </th>
         </tr>
       </tbody>
+
+      {
+        games.map(game => {
+          return <Game key={game.id} name={game.name} genre={game.genre.name} />
+        })
+      }
     </table>
   )
 }

@@ -79,6 +79,38 @@
         "id": 1,
         "name": "strategy"
       }
+    },
+    {
+      "name": "Risk",
+      "genre": {
+        "id": 1,
+        "name": "strategy"
+      },
+      "id": 11
+    },
+    {
+      "name": "Cambio",
+      "genre": {
+        "id": 5,
+        "name": "racing"
+      },
+      "id": 12
+    },
+    {
+      "name": "Life",
+      "genre": {
+        "id": 5,
+        "name": "racing"
+      },
+      "id": 13
+    },
+    {
+      "name": "Clank",
+      "genre": {
+        "id": 1,
+        "name": "strategy"
+      },
+      "id": 14
     }
   ],
   "genres": [

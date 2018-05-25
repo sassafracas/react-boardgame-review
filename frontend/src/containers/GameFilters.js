@@ -11,7 +11,9 @@ const GameFilters = (props) => {
         handleDropdown={props.handleGenreFilter}
       />
       <NameFilter
-        handleNameFilter={this.handleNameFilter}
+        handleNameFilter={props.handleNameFilter}
+        query={props.query}
+        handleNameSubmit={props.handleNameSubmit}
       />
     </div>
   )
