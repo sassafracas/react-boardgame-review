@@ -22,6 +22,17 @@ yarn
 yarn start
 ```
 
+## Frontend Instructions
+
+```sh
+cd frontend
+# Install dependencies:
+yarn
+# Since the backend runs on port 3000,
+# we need to run React on a different port.
+PORT=4000 yarn start
+```
+
 ### API
 
 ```markdown
@@ -29,7 +40,17 @@ Server runs on: http://localhost:3000
 
 - /boardgames
   - GET
-    - response: [ array of games ]
+    - response: [
+                  {
+                    "id": 1,
+                    "name": "The Settlers of Catan",
+                    "genre": {
+                      "id": 1,
+                      "name": "strategy"
+                    }
+                  },
+                  ...
+                ]
   - POST
     - body: {
               name,
