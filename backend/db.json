@@ -3,60 +3,108 @@
     {
       "id": 1,
       "name": "The Settlers of Catan",
-      "genre": { "id": 1, "name": "strategy" }
+      "genre": {
+        "id": 1,
+        "name": "strategy"
+      }
     },
     {
       "id": 2,
       "name": "Monopoly",
-      "genre": { "id": 2, "name": "negotiation" }
+      "genre": {
+        "id": 2,
+        "name": "negotiation"
+      }
     },
     {
       "id": 3,
       "name": "Chess",
-      "genre": { "id": 3, "name": "tactics" }
+      "genre": {
+        "id": 3,
+        "name": "tactics"
+      }
     },
     {
       "id": 4,
       "name": "Dominion",
-      "genre": { "id": 4, "name": "planning" }
+      "genre": {
+        "id": 4,
+        "name": "planning"
+      }
     },
     {
       "id": 5,
       "name": "Checkers",
-      "genre": { "id": 3, "name": "tactics" }
+      "genre": {
+        "id": 3,
+        "name": "tactics"
+      }
     },
     {
       "id": 6,
       "name": "Battleship",
-      "genre": { "id": 1, "name": "strategy" }
+      "genre": {
+        "id": 1,
+        "name": "strategy"
+      }
     },
     {
       "id": 7,
       "name": "Candy Land",
-      "genre": { "id": 5, "name": "racing" }
+      "genre": {
+        "id": 5,
+        "name": "racing"
+      }
     },
     {
       "id": 8,
       "name": "Operation",
-      "genre": { "id": 6, "name": "dexterity" }
+      "genre": {
+        "id": 6,
+        "name": "dexterity"
+      }
     },
     {
       "id": 9,
       "name": "Sorry!",
-      "genre": { "id": 5, "name": "racing" }
+      "genre": {
+        "id": 5,
+        "name": "racing"
+      }
     },
     {
       "id": 10,
       "name": "Axis & Allies",
-      "genre": { "id": 1, "name": "strategy" }
+      "genre": {
+        "id": 1,
+        "name": "strategy"
+      }
     }
   ],
   "genres": [
-    { "id": 1, "name": "strategy" },
-    { "id": 2, "name": "negotiation" },
-    { "id": 3, "name": "tactics" },
-    { "id": 4, "name": "planning" },
-    { "id": 5, "name": "racing" },
-    { "id": 6, "name": "dexterity" }
+    {
+      "id": 1,
+      "name": "strategy"
+    },
+    {
+      "id": 2,
+      "name": "negotiation"
+    },
+    {
+      "id": 3,
+      "name": "tactics"
+    },
+    {
+      "id": 4,
+      "name": "planning"
+    },
+    {
+      "id": 5,
+      "name": "racing"
+    },
+    {
+      "id": 6,
+      "name": "dexterity"
+    }
   ]
 }
