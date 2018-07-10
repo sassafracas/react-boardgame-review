@@ -26,3 +26,50 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+table {
+  margin: 20px 0;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #cbcbcb;
+  width: 50%;
+}
+
+table td {
+  padding: 15px;
+}
+
+table th {
+  background-color: #e0e0e0
+}
+
+div.board-game-container {
+  margin: 0 20px;
+}
+
+div.filter,
+div.filterForm,
+div.addform > form {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.filterForm {
+  flex-direction: column;
+}
+
+div.filter input[type="text"], form.create input {
+  margin: 0px 10px;
+}
+
+input[type="text"] {
+  min-width: 300px;
+}
+
+select.dropdown {
+  max-width: 200px;
+}
