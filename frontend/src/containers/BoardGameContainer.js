@@ -33,7 +33,7 @@ export default class BoardGameContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="board-game-container">
         <GameFilters
           genres={this.state.genres}
           currentGenre={this.state.currentGenre}
