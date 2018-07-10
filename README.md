@@ -17,9 +17,9 @@ README
 ```sh
 cd backend
 # Install dependencies:
-yarn
+npm install
 # Run server:
-yarn start
+npm run start
 ```
 
 ## Frontend Instructions
@@ -27,10 +27,10 @@ yarn start
 ```sh
 cd frontend
 # Install dependencies:
-yarn
+npm install
 # Since the backend runs on port 3000,
 # we need to run React on a different port.
-PORT=4000 yarn start
+PORT=4000 npm start
 ```
 
 ### API
