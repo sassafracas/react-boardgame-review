@@ -52,7 +52,8 @@ div.board-game-container {
 
 div.filter,
 div.filterForm,
-div.addform > form {
+div.addform > form,
+div.gameform {
   display: flex;
   margin-top: 5px;
   margin-bottom: 5px;
