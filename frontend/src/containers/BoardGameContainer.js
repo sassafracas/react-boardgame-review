@@ -14,7 +14,23 @@ export default class BoardGameContainer extends Component {
     }
   }
 
+  componentDidMount = () => {
+    fetch("http://localhost:3000/genres").then(r => r.json()).then(data => this.addGenresToState(data))
+    fetch("http://localhost:3000/boardgames").then(r => r.json()).then(data => this.addBoardGamesToState(data))
+  }
+
+  addGenresToState = (data) => {
+    console.log("adding genres to state ", data)
+    this.setState({genres: data}, ()=> {console.log("after setting state", this.state)})
+  }
+
+  addBoardGamesToState = (data) => {
+    this.setState({games: data}, ()=> {console.log("after setting state", this.state)})
+  }
+
   genreFilter = (event) => {
+    event.persist()
+    console.log(event)
     // Option 1: match by name === value
     // const currentGenre = this.state.genres.find(genre => genre.name === event.target.value);
     // Option 2: change value to id in <option> and for controlled value in <select> and match by id === value
@@ -28,7 +44,7 @@ export default class BoardGameContainer extends Component {
     // const id = event.target.options[event.target.selectedIndex].getAttribute('data-value');
     // const currentGenre = this.state.genres.find(genre => genre.id == id);
 
-    this.setState({ currentGenre });
+    this.setState({ currentGenre }, () => {console.log("after filter", this.state)});
   }
 
   render() {
@@ -43,7 +59,7 @@ export default class BoardGameContainer extends Component {
           genres={this.state.genres}
           handleSubmit={this.handleSubmit}
         />
-        <GamesTable />
+      <GamesTable games={this.state.games} currentGenre={this.state.currentGenre}/>
       </div>
     )
   }

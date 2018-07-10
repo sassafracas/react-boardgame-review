@@ -1,6 +1,18 @@
 import React from 'react';
-
+import Game from "./Game"
 const GamesTable = (props) => {
+
+  const mapGames = () => {
+    console.log(props)
+    return props.games.map(gameObj => {return <Game game={gameObj} />})
+  }
+
+  const filterGames = () => {
+    return props.games.filter(gameObj => {
+      return gameObj.genre.id === props.currentGenre.id})
+  }
+
+
   return (
     <table className="games">
       <tbody>
@@ -12,6 +24,7 @@ const GamesTable = (props) => {
             <h3 className="">Genre</h3>
           </th>
         </tr>
+        {props.currentGenre.id ? filterGames() : mapGames()}
       </tbody>
     </table>
   )

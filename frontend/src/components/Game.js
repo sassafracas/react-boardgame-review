@@ -1,10 +1,11 @@
 import React from 'react'
 
 const Game = (props) => {
+  console.log("game props ", props.game);
   return (
     <tr>
-      <td>{"name goes here"}</td>
-      <td>{"genre goes here"}</td>
+      <td>{props.game.name}</td>
+      <td>{props.game.genre.name}</td>
     </tr>
   )
 }
